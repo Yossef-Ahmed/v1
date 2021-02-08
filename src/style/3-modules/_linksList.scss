@@ -1,0 +1,16 @@
+.links-list {
+    display: flex;
+    &--beside-btn {
+        margin-right: 55px;
+    }
+    &__link {
+        a {
+            color: #9999a9;
+            display: block;
+            margin-left: 40px;
+            &:hover {
+                color: #444452;
+            }
+        }
+    }
+}

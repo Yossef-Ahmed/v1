@@ -1,0 +1,20 @@
+// 0- Vendors Files
+@import "0-vendors/fontawesome.min.css";
+
+// 1- BASE FILES
+@import "1-base/base";
+
+// 2- LAYOUTS FILES
+@import "2-layouts/layout";
+@import "2-layouts/switchWrapper";
+
+// 3- MODULES FILES
+@import "3-modules/brandName.scss";
+@import "3-modules/linksList.scss";
+@import "3-modules/toggle.scss";
+
+// 4- STATES FILES
+// @import "4-states/";
+
+// 5- THEMES
+// @import "5-themes/";
