@@ -23,3 +23,11 @@
         display: flex;
     }
 }
+
+// All small devices (phones, tablets, 800px and down)
+@media only screen and (max-width: 800px) {
+    .navbar__right {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

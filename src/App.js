@@ -3,10 +3,22 @@ import './style/App.scss';
 import Navbar from "./components/Navbar";
 
 export class App extends Component {
+  state = {
+    isDarkTheme: JSON.parse(localStorage.getItem('isDarkTheme')) || false
+  }
+  toggleDarkTheme = () => {
+    this.setState({isDarkTheme: !this.state.isDarkTheme})
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.isDarkTheme !== prevState.isDarkTheme) {
+      // Save the theme to the localStorage
+      localStorage.setItem("isDarkTheme", this.state.isDarkTheme)
+    }
+  }
   render() {
     return (
-      <div className="App">
-        <Navbar />
+      <div className={`App ${this.state.isDarkTheme === true ? 'dark-mode' : 'light-mode'}`}>
+        <Navbar toggleDarkTheme={this.toggleDarkTheme} />
         <div className="content">
           Content
         </div>

@@ -1,7 +1,13 @@
+.mobile-links {
+    &__close-btn {
+        display: none;
+    }
+}
+
 .links-list {
     display: flex;
     &--beside-btn {
-        margin-right: 55px;
+        margin-right: 25px;
     }
     &__link {
         a {
@@ -11,6 +17,57 @@
             &:hover {
                 color: #444452;
             }
+        }
+    }
+}
+
+// All small devices (phones, tablets, 800px and down)
+@media only screen and (max-width: 800px) {
+    .mobile-links {
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(0,0,0, 0.9);
+        z-index: 5;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        transition: .5s;
+        width: 0;
+        display: flex;
+        overflow: hidden;
+        &.active {
+            width: 100%;
+        }
+        &__close-btn {
+            font-size: 26px;
+            position: absolute;
+            top: 15px;
+            left: -30px;
+            display: block;
+        }
+        &.active &__close-btn {
+            left: 35px;
+        }
+    }
+    .links-list {
+        flex-direction: column;
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        a {
+            padding: 8px;
+            font-size: 22px;
+            color: #818181;
+            transition: .3s;
+            margin-left: unset;
+            &:hover, &.active {
+                color: #f1f1f1;
+            }
+        }
+        &--beside-btn {
+            margin-right: 0;
         }
     }
 }
