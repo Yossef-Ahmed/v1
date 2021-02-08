@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style/App.scss';
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 export class App extends Component {
   state = {
@@ -20,7 +21,7 @@ export class App extends Component {
       <div className={`App ${this.state.isDarkTheme === true ? 'dark-mode' : 'light-mode'}`}>
         <Navbar toggleDarkTheme={this.toggleDarkTheme} />
         <div className="content">
-          Content
+          <Header />
         </div>
         <div className="footer">
           Footer

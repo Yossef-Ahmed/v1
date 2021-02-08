@@ -9,11 +9,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 45px;
 }
 
 .navbar {
     @extend .container;
+    background-color: #fff;
     line-height: 50px;
     justify-content: space-between;
     position: sticky;
@@ -21,11 +22,21 @@
     z-index: 10;
     &__right {
         display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 }
 
-// All small devices (phones, tablets, 800px and down)
-@media only screen and (max-width: 800px) {
+.header {
+    @extend .container;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+@media only screen and (max-width: 1024px) {
     .navbar__right {
         width: 100%;
         justify-content: space-between;

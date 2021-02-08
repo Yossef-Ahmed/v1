@@ -1,0 +1,48 @@
+.header {
+    &__welcome, &__title {
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    &__welcome {
+        font-size: 2rem;
+    }
+    &__title {
+        max-width: 700px;
+        font-size: 2.2rem;
+        line-height: 1.6;
+    }
+    &__btn {
+        background: #444452;
+        padding: 10px 20px;
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid #34343a;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: transparent;
+            color: #34343a;
+        }
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .header {
+        &__welcome {
+            font-size: 1.4rem;
+        }
+        &__title {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+    .header {
+        &__welcome {
+            font-size: 1.8rem;
+        }
+        &__title {
+            font-size: 1.8rem;
+        }
+    }
+}
