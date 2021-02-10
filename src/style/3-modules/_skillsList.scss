@@ -1,0 +1,41 @@
+// Main Style
+.skills-list {
+    line-height: 1.5;
+    &__title {
+        font-weight: 700;
+        color: #36363c;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    &__element {
+        margin: 3px 0;
+        font-size: .9rem;
+        opacity: .7;
+    }
+}
+
+// Dark Mode Style
+.dark-mode .skills-list__title {
+    color: #fff;
+}
+
+// Responsive
+
+@media only screen and (max-width: 630px) {
+    .skills-list {
+        width: 47%;
+        margin-right: 5px;
+        margin-bottom: 25px;
+        &:last-child {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .skills-list {
+        &__title {
+            margin-bottom: 7px;
+        }
+    }
+}

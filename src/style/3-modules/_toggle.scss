@@ -21,3 +21,12 @@
         }
     }
 }
+
+// Dark Mode Style
+.dark-mode .toggle-wrapper label {
+    background-color: #bae67e;
+    &::after {
+        left: 22px;
+        background-color: #fff;
+    }
+}

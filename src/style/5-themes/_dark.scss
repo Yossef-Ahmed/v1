@@ -1,33 +1,4 @@
 .dark-mode {
     background-color: #171c28;
     color: #d0d0d0;
-    // Navbar
-    .navbar {
-        background-color: #171c28;
-    }
-    // Link List
-    .links-list__link a {
-        &:hover {
-            color: #d0d0d0;
-        }
-    }
-    // Toggle Button
-    .toggle-wrapper label {
-        background-color: #bae67e;
-        &::after {
-            left: 22px;
-            background-color: #fff;
-        }
-    }
-    // Header
-    .header {
-        &__btn {
-            background-color: #007BFF;
-            border-color: #0970de;
-            &:hover {
-                background-color: transparent;
-                color: #0970de;
-            }
-        }
-    }
 }

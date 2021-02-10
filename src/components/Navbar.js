@@ -2,29 +2,29 @@ import React, { Component } from 'react'
 
 export class Navbar extends Component {
     toggleMenuLinks = () => {
-        document.querySelector('.links-container').classList.toggle('active');
+        document.querySelector('.hamburger-menu').classList.toggle('active');
     }
     render() {
         return (
-            <nav className="navbar">
-                <div className="hamburger-menu" onClick={this.toggleMenuLinks}>
+            <nav className="navbar container">
+                <div className="hamburger-icon" onClick={this.toggleMenuLinks}>
                     <i className="fas fa-bars"></i>
                 </div>
-                <div className="links-container">
-                    <div className="links-container__close-btn" onClick={this.toggleMenuLinks}>
+                <div className="hamburger-menu">
+                    <div className="hamburger-menu__close-btn" onClick={this.toggleMenuLinks}>
                         <i className="fas fa-times"></i>
                     </div>
-                    <ul className="links-list">
-                        <li className="links-list__link">
+                    <ul className="hamburger-menu__links-list">
+                        <li className="hamburger-menu__link">
                             <a href="#">About</a>
                         </li>
-                        <li className="links-list__link">
+                        <li className="hamburger-menu__link">
                             <a href="#">My Skills</a>
                         </li>
-                        <li className="links-list__link">
+                        <li className="hamburger-menu__link">
                             <a href="#">My Resume</a>
                         </li>
-                        <li className="links-list__link">
+                        <li className="hamburger-menu__link">
                             <a href="#">Featured Projects</a>
                         </li>
                     </ul>

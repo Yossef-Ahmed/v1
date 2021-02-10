@@ -1,0 +1,19 @@
+// Main Style
+.hamburger-icon {
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+    opacity: .5;
+    cursor: pointer;
+    display: flex;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+// Dark Mode Style
+.dark-mode .hamburger-icon {
+    color: #d0d0d0;
+    opacity: 1;
+}

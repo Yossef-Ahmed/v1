@@ -1,3 +1,4 @@
+// Main Style
 .header {
     &__welcome, &__title {
         font-weight: 300;
@@ -24,6 +25,20 @@
         }
     }
 }
+
+// Dark Mode Style
+.dark-mode .header {
+    &__btn {
+        background-color: #007BFF;
+        border-color: #0970de;
+        &:hover {
+            background-color: transparent;
+            color: #0970de;
+        }
+    }
+}
+
+// Responsive
 
 @media only screen and (max-width: 667px) {
     .header {

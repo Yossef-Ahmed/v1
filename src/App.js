@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './style/App.scss';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import Skills from "./components/Skills";
 
 export class App extends Component {
   state = {
@@ -22,6 +23,7 @@ export class App extends Component {
         <Navbar toggleDarkTheme={this.toggleDarkTheme} />
         <div className="content">
           <Header />
+          <Skills />
         </div>
         <div className="footer">
           Footer
