@@ -3,6 +3,7 @@ import './style/App.scss';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
+import FeaturedProjects from "./components/FeaturedProjects";
 
 export class App extends Component {
   state = {
@@ -12,10 +13,15 @@ export class App extends Component {
     this.setState({isDarkTheme: !this.state.isDarkTheme})
   }
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.isDarkTheme !== prevState.isDarkTheme) {
-      // Save the theme to the localStorage
-      localStorage.setItem("isDarkTheme", this.state.isDarkTheme)
+    if (this.isDarkThemeChanged(this.state.isDarkTheme, prevState.isDarkTheme)) {
+      this.saveDarkThemeToLocalStorage(this.state.isDarkTheme)
     }
+  }
+  isDarkThemeChanged = (currentDarkTheme, prevDarkTheme) => {
+    return currentDarkTheme !== prevDarkTheme
+  }
+  saveDarkThemeToLocalStorage = (val) => {
+    localStorage.setItem("isDarkTheme", val)
   }
   render() {
     return (
@@ -24,6 +30,7 @@ export class App extends Component {
         <div className="content">
           <Header />
           <Skills />
+          <FeaturedProjects />
         </div>
         <div className="footer">
           Footer
