@@ -1,0 +1,41 @@
+.footer__links {
+    display: flex;
+}
+.footer__link {
+    a {
+        color: #007bff;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0 15px;
+        transition: .2s ease-in-out;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    &__text {
+        font-size: .9rem;
+        display: inline;
+        letter-spacing: 1px;
+    }
+    &__logo {
+        display: none;
+        width: 22px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer__link a {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .footer__link {
+        &__text {
+            display: none;
+        }
+        &__logo {
+            display: inline-block;
+        }
+    }
+}

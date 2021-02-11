@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import FeaturedProjects from "./components/FeaturedProjects";
+import Footer from "./components/Footer";
 
 export class App extends Component {
   state = {
@@ -32,9 +33,7 @@ export class App extends Component {
           <Skills />
           <FeaturedProjects />
         </div>
-        <div className="footer">
-          Footer
-        </div>
+        <Footer />
       </div>
     )
   }
