@@ -1,9 +1,7 @@
-// Main Style
 .skills-list {
     line-height: 1.5;
     &__title {
         font-weight: 700;
-        color: #36363c;
         text-transform: uppercase;
         margin-bottom: 12px;
     }
@@ -13,13 +11,6 @@
         opacity: .7;
     }
 }
-
-// Dark Mode Style
-.dark-mode .skills-list__title {
-    color: #fff;
-}
-
-// Responsive
 
 @media only screen and (max-width: 630px) {
     .skills-list {

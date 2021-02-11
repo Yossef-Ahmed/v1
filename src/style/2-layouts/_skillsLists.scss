@@ -1,9 +1,7 @@
-// Main Style
 .skills-lists {
     justify-content: space-around;
 }
 
-// Responsive
 @media only screen and (max-width: 630px) {
     .skills-lists {
         flex-wrap: wrap;

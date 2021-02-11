@@ -1,4 +1,3 @@
-// Main Style
 .hamburger-menu {
     height: 100vh;
     position: fixed;
@@ -40,15 +39,5 @@
         font-size: 22px;
         color: #818181;
         transition: .3s;
-        &:hover, &.active {
-            color: #f1f1f1;
-        }
-    }
-}
-
-// Dark Mode Style
-.dark-mode .links-list__link a {
-    &:hover {
-        color: #d0d0d0;
     }
 }

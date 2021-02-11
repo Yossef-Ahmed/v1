@@ -32,7 +32,7 @@ export class Navbar extends Component {
                 <div className="switch-wrapper">
                     <i className="fas fa-sun switch__icon"></i>
                     <div className="toggle-wrapper" onClick={this.props.toggleDarkTheme}>
-                        <label id="toggle"></label>
+                        <label className="toggle-btn"></label>
                     </div>
                     <i className="fas fa-moon switch__icon"></i>
                 </div>

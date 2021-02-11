@@ -1,4 +1,40 @@
 .dark-mode {
     background-color: #171c28;
-    color: #d0d0d0;
+    color: #afafbf;
+    .navbar {
+        background-color: #171c28;
+    }
+    .toggle-btn {
+        background-color: #bae67e;
+        &::after {
+            left: 22px;
+            background-color: #fff;
+        }
+    }
+    .hamburger-icon {
+        color: #d0d0d0;
+        opacity: 1;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    .hamburger-menu__link a {
+        &:hover, &.active {
+            color: #d0d0d0;
+        }
+    }
+    .header__btn {
+        background-color: #007BFF;
+        border-color: #0970de;
+        &:hover {
+            background-color: transparent;
+            color: #0970de;
+        }
+    }
+    .header__welcome,
+    .header__title,
+    .skills-list__title,
+    .featured-project__name a {
+        color: #e7e7e7;
+    }
 }

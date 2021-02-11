@@ -10,12 +10,13 @@
 @import "2-layouts/navbar";
 @import "2-layouts/header";
 @import "2-layouts/switchWrapper";
+@import "2-layouts/toggleWrapper";
 @import "2-layouts/section";
 @import "2-layouts/skillsLists";
 @import "2-layouts/featuredProjects";
 
 // 3- MODULES FILES
-@import "3-modules/toggle";
+@import "3-modules/toggleBtn";
 @import "3-modules/hamburgerIcon";
 @import "3-modules/hamburgerMenu";
 @import "3-modules/header";
@@ -27,4 +28,5 @@
 // @import "4-states/";
 
 // 5- THEMES
+@import "5-themes/light";
 @import "5-themes/dark";
