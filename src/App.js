@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import FeaturedProjects from "./components/FeaturedProjects";
+import OtherProjects from "./components/OtherProjects";
 import Footer from "./components/Footer";
 
 export class App extends Component {
@@ -32,6 +33,7 @@ export class App extends Component {
           <Header />
           <Skills />
           <FeaturedProjects />
+          <OtherProjects />
         </div>
         <Footer />
       </div>

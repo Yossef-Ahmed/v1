@@ -1,0 +1,35 @@
+.other-project {
+    max-width: 600px;
+    margin-bottom: 50px;
+    &:last-child {
+        margin-bottom: unset;
+    }
+    &__name {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        a {
+            color: inherit;
+            transition: .2s ease-in-out;
+            &:hover {
+                color: #007bff;
+            }
+        }
+    }
+    &__description {
+        font-size: .9rem;
+        margin-bottom: 20px;
+        font-weight: 300;
+        opacity: .7;
+    }
+    &__tag {
+        display: inline-block;
+        margin: 3px 7px 3px 0;
+        font-family: Inconsolata,monospace;
+        font-size: .75rem;
+        font-weight: 700;
+        padding: 3px 7px;
+        border-radius: 3px;
+        color: #007bff;
+        border: 1px solid #007bff;
+    }
+}
