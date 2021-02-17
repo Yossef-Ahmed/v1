@@ -6,7 +6,7 @@ export class Header extends Component {
             <header className="header container">
                 <h2 className="header__welcome">Welcome 😃</h2>
                 <h1 className="header__title">I'm <strong>Youssef Ahmed</strong>, a full MERN stack developer focused on building complex systems with elegant architectures</h1>
-                <button className="header__btn">Contact Me</button>
+                <a href="mailto:uosefd@gmail.com" className="header__btn" target="_blank">Contact Me</a>
             </header>
         )
     }

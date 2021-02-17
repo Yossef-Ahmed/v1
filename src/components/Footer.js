@@ -28,7 +28,7 @@ export class Footer extends Component {
                             <img className="footer__link__logo" src={UpworkLogo} alt="Upwork Logo"/>
                         </a>
                     </li>
-                    <li className="footer__link">
+                    <li className="footer__link" target="_blank">
                         <a href="mailto:uosefd@gmail.com">
                             <span className="footer__link__text">Email</span>
                             <img className="footer__link__logo" src={EmailLogo} alt="Email Logo"/>
