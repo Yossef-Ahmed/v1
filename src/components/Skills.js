@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class MySkills extends Component {
     render() {
         return (
-            <section className="section my-skills">
+            <section className="section">
                 <h2 className="section__title">Skills</h2>
                 <div className="section__body skills-lists">
                     <ul className="skills-list">
