@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import EmailLogo from "../images/Footer Logos/email.svg";
 import GitHubLogo from "../images/Footer Logos/github.svg";
-import LinkedInLogo from "../images/Footer Logos/linkedin.svg";
 import UpworkLogo from "../images/Footer Logos/upwork.png";
 
 export class Footer extends Component {
@@ -10,12 +9,6 @@ export class Footer extends Component {
             <footer className="footer container">
                 <div className="footer__copyright">Designed &amp; Developed by Youssef Ahmed 2021</div>
                 <ul className="footer__links">
-                    <li className="footer__link">
-                        <a href="#" target="_blank">
-                            <span className="footer__link__text">LinkedIn</span>
-                            <img className="footer__link__logo" src={LinkedInLogo} alt="LinkedIn Logo"/>
-                        </a>
-                    </li>
                     <li className="footer__link">
                         <a href="https://github.com/Yossef-Ahmed" target="_blank">
                             <span className="footer__link__text">GitHub</span>
