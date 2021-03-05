@@ -7,7 +7,7 @@ export class Footer extends Component {
     render() {
         return (
             <footer className="footer container">
-                <div className="footer__copyright">Designed &amp; Developed by Youssef Ahmed 2021</div>
+                <div className="footer__copyright">Developed by Youssef Ahmed 2021</div>
                 <ul className="footer__links">
                     <li className="footer__link">
                         <a href="https://github.com/Yossef-Ahmed" target="_blank">
