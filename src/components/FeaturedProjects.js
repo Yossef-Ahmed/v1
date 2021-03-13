@@ -16,7 +16,7 @@ export class FeaturedProjects extends Component {
                             <h3 className="featured-project__name">
                                 <a href={ExpenseTrackerLink}>Expense Tracker</a>
                             </h3>
-                            <p className="featured-project__description">A sample expense tracker to manage your personal finance for each month made with the MERN stack.</p>
+                            <p className="featured-project__description">A finance management tool build with the MERN stack to help you record your daily transactions easily, discover your spending habits, and in general, Discover where your money goes.</p>
                         </div>
                     </div>
                 </div>
