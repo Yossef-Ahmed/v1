@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ExpenseTrackerImage from "../images/projects/Expense Tracker.png";
-import WeelzImage from "../images/projects/Weelz.jpeg";
+import WeelzImage from "../images/projects/Weelz.png";
 
 const ExpenseTrackerLink = "https://track-my-money.herokuapp.com/";
 const WeelzLink = "https://github.com/Yossef-Ahmed/web-app/tree/csb-9g327";
