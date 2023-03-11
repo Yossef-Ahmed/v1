@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ExpenseTrackerImage from "../images/projects/Expense Tracker.png";
 import WeelzImage from "../images/projects/Weelz.png";
 
-const ExpenseTrackerLink = "https://track-my-money.herokuapp.com/";
+const ExpenseTrackerLink = "https://expense-tracker-qgf0.onrender.com/";
 const WeelzLink = "https://github.com/weelz-app/web-app";
 
 export class FeaturedProjects extends Component {
